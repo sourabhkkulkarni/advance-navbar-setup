@@ -1,0 +1,556 @@
+@import "~bootstrap/scss/bootstrap";
+#root {
+    .MainContent-root {
+        width: 95%;
+        //margin: 0 30px;
+        padding: 0 15px;
+
+        .top-border {
+            border-bottom: 4px solid #000;
+            margin: 0 0px !important;
+            padding-bottom: 10px;
+        }
+        .section2 {
+            // height: 100%;
+            height: 315px;
+            //width: 802px;
+            canvas {
+                height: 90% !important;
+                width: 98% !important;
+                margin-top: 30px;
+            }
+            .chart-tooltip {
+                background: rgba(0, 0, 0, 0.7);
+                border-radius: 10px;
+                color: white;
+                opacity: 0;
+                pointer-events: none;
+                position: absolute;
+                transform: translate(-50%, 0px);
+                transition: all 0.1s ease 0s;
+                left: 755.898px;
+                top: 512.125px;
+                padding: 6px;
+                font-size: 12px;
+                font-weight: normal;
+            }
+        }
+
+        .top-pad {
+            margin-top: 10px !important;
+            padding: 0 7.5px;
+            .noMargin {
+                margin: 0 !important;
+            }
+            .headerDropdown {
+                margin-top: 25px;
+                fieldset {
+                    border: none !important;
+                }
+                .MuiFormControl-root {
+                    float: right;
+                    margin-right: 0;
+                    margin-bottom: 0 !important;
+                }
+                label {
+                    font-size: 0.8rem;
+                    font-weight: 600;
+                    font-family: VerizonNHGDSRegular !important;
+                }
+            }
+            .section1 {
+                height: 314px !important;
+                padding: 0 15px 0 0;
+            }
+
+            .sortBy {
+                position: relative;
+                left: 50px;
+            }
+        }
+
+        .MuiTabs-root {
+            
+            button.MuiButtonBase-root {
+                font-family: VerizonNHGDS !important;
+                height: 19px;
+                font-size: 18px !important;
+                font-weight: 400;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 0.95;
+                letter-spacing: normal;
+                width: 285px;
+            }
+            .MuiTabs-indicator {
+                background-color: #ee0000 !important;
+                height: 4px;
+            }
+        }
+        .MuiTablePagination-root{
+            border-bottom: none;
+        }
+    }
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+.channelStylings {
+    font-size: 30px;
+    font-family: VerizonNHGDS !important;
+    color: #000000;
+    text-transform: capitalize !important;
+    line-height: 1;
+}
+.environmentStylings {
+    color: #ee0000;
+    font-family: VerizonNHGDS !important;
+    font-size: 20px;
+}
+
+.MuiFormControl-root {
+    margin-bottom: 12px !important;
+
+    .env-dropdown {
+        width: 148px;
+        height: 44px;
+    }
+}
+.query-text {
+    .MuiInputBase-root{
+        height: 80px !important;
+        textarea{
+            height: 70px !important;
+        }
+    }
+}
+
+ul.MuiList-root.MuiList-padding.MuiMenu-list {
+    max-height: 400px;
+}
+.MuiMenu-root {
+    .MuiPopover-paper {
+        background-color: #ffffff !important;
+        .MuiMenuItem-root{
+            display: flex !important;
+            min-height: 48px !important;
+            padding-top: 6px !important;
+            padding-bottom: 6px !important;
+            box-sizing: border-box;
+            white-space: nowrap;
+            padding-left: 16px !important;
+            padding-right: 16px !important;
+            justify-content: flex-start !important;
+        }
+        
+    }
+    .env-option {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+        width: 116px;
+        margin: 0 auto !important;
+    }
+    .loc-option{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+        width: 240px;
+        margin: 0 auto !important;
+    }
+    
+}
+.submit-button{
+    margin-left: 5px !important;
+    width: 188px;
+    height: 44px;
+    border-radius: 22px !important;
+    background-color: #000000 !important;
+    text-transform: none !important;
+    color: #FFFFFF !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    font-weight: bold !important;
+    :hover {
+        background: #000000 !important
+    }
+}
+.reset-button{
+    margin-left: 5px !important;
+    width: 188px;
+    height: 44px;
+    border-radius: 22px !important;
+    background-color: #FFFFFF !important;
+    text-transform: none !important;
+    color: #000000 !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    font-weight: bold !important;
+    border: 1px solid #000 !important;
+    :hover {
+        background: #FFFFFF !important
+    }
+    
+}
+.button-container .Mui-disabled {
+    background-color: #CFCCCC !important;
+    cursor: not-allowed !important;
+}
+.input-disabled .Mui-disabled fieldset{
+    background-color: #e9ecef8f;
+    cursor: not-allowed !important;
+}
+
+.card-submit-button{
+    margin-left: 5px !important;
+    width: 74px;
+    height: 28px;
+    border-radius: 14px !important;
+    background-color: #000 !important;
+    text-transform: none !important;
+    color: #fff !important;
+    font-size: 12px !important;
+    line-height: 20px !important;
+    font-family:'VerizonNHGTX' !important;
+    font-weight: bold !important;
+    border: 1px solid #000 !important;
+    :hover {
+        background: "#000",
+    }
+    .button-container .Mui-disabled {
+    background-color: #CFCCCC !important;
+    cursor: not-allowed !important;
+}
+}
+.confirm-btn-width{
+    width: 90px !important;
+    height: 35px !important;
+}
+
+.popup-title{
+    height: 42px;
+    color: #fff;
+    line-height: 0.6 !important;
+    background: #000;
+    padding: 16px !important;
+}
+
+.popup-content{
+    padding: 16px !important;
+    font-size: 17px;
+    font-family: 'VerizonNHGDSRegular';
+}
+
+.selected-item{
+    background-color: #000 !important;
+    margin-bottom: 1px !important;
+}
+
+.input-box {
+    border-radius: 0 !important;
+    border: 0.1rem solid #d8dada !important;
+    border-bottom: 1px solid !important;
+    font-family: VerizonNHGDSRegular !important;
+    font-size: 14px !important;
+    height: 44px;
+}
+
+.location-input-box{
+    width: 240px !important;
+    margin-right: 10px;
+}
+
+.environment-input-box{
+    width: 148px !important;
+    margin-right: 10px;
+}
+.daterange-input-box {
+    width: 220px !important;
+}
+
+.input-box.MuiSelect-select {
+    min-height: 0 !important;
+}
+
+.tabs-label {
+    text-transform: none !important;
+    color: #000000 !important;
+    font-family: VerizonNHGeDS !important;
+    font-size: 20px !important;
+    line-height: 20px !important;
+    min-width: 180px !important;
+    padding-bottom: 17px !important;
+    padding-top: 27px !important;
+  
+}
+
+.MuiTabs-flexContainer > button.Mui-selected {
+    border-bottom: 4px solid #ee0000 !important;
+}
+
+.tabs-border {
+    border-bottom: 1px solid #747676;
+}
+
+.graphs-container {
+    margin-top: 20px;
+}
+
+.tabs-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #747676;
+    margin: 0;
+    padding: 0;
+}
+
+.expandcollapse-container-parent {
+    position: relative;
+}
+.expandcollapse-container {
+    text-align: right;
+    position: absolute;
+    right: 0;
+    top: -35px;
+}
+.Mui-expanded {
+    margin: 0px !important;
+}
+.col-black {
+    color: #000000;
+}
+.col-grey {
+    color: #f6f6f6;
+}
+.background-col-grey {
+    background: #f6f6f6;
+}
+.col-blue {
+    color: #0077b4;
+}
+.col-green {
+    color: #008330;
+}
+.col-orange {
+    color: #ed7000 !important;
+}
+.col-red {
+    color: #ee0000 !important;
+}
+.error {
+    color: #ee0000 !important;
+}
+.warn {
+    color: #ed7000 !important;
+}
+.success {
+    color: #008330 !important;
+}
+.pagination {
+    list-style: none;
+    margin: 0;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: right;
+}
+
+.pr-0 {
+    .ctrllabelCSS  {
+      padding-right: 0 !important;
+    }
+  }
+
+.dropdown-items{
+    display: flex !important;
+    min-height: 48px !important;
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+    box-sizing: border-box;
+    white-space: nowrap;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    justify-content: flex-start !important;
+}
+
+//Table container css
+.sticky-header {
+    position:sticky;
+    right:0;
+    background-color:#ffffff;
+}
+
+
+.collapsed{
+    min-height: 0px;
+    height: 0px;
+    transition-duration: 300ms;
+    overflow: hidden;
+    display: none;
+    -webkit-transition: height 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: height 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+ .expanded{
+    min-height: 0px;
+    height: auto;
+    transition-duration: 300ms;
+    overflow: visible;
+    -webkit-transition: height 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: height 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+ }
+
+ .page-title{
+    color: #000000;
+    font-family: "VerizonNHGeDS" !important;
+    font-size: 24px !important;
+    font-weight: bold !important;
+    letter-spacing: 0 !important;
+    line-height: 32px !important;
+}
+
+//Steppers css
+.steppers{
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 2rem 0;
+    .step-body{
+        width: 175px;
+    }
+    .round-box{
+        width: 90px;
+        background: #a7a4a4;
+        padding: 11px 18px;
+        border-radius: 50%;
+        margin-bottom: 9px;
+        color: #fff;
+        font-size: 23px;
+        cursor: pointer;
+     }
+     .dotted-line {
+        border-top: 2px dashed #979797;
+        position: absolute;
+        margin-left: 112px;
+        width: 126px;
+        margin-top: -57px;
+     }
+     .title{
+        color: #0077B4;
+        font-family: "VerizonNHGeDSRegular";
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: 24px;
+        text-align: center;
+        cursor: pointer;
+     }
+     .active{
+         background: #D52B1E !important;
+         cursor:default;
+         font-weight: bold;
+     }
+     .title-active{
+         color: #000;
+     
+         cursor:default;
+         font-family: "VerizonNHGeDS";
+     }
+     .complete{
+        background: #000 !important;
+    }
+     .ml-15 {
+         margin-left: 15px;
+     }
+ }
+
+ .left-align {
+    .MuiTypography-root{
+        padding-left: 0;
+    }
+    .MuiOutlinedInput-root, .MuiFormControl-fullWidth {
+        margin-left: 0;
+    }
+}
+
+ .devider{
+    margin-left: -36px !important;
+    margin-right: -36px !important;
+    background-color: #D8DADA !important;
+    border-bottom-width: 1px;
+    //margin-top: 2rem !important;
+    margin-bottom: 1rem !important;
+    opacity: 1;
+ }
+
+ .full-width-th {
+     width: 100% !important;
+ }
+
+ .notify-dualbox{
+     .MuiPaper-root {
+        height: 480px !important;
+        width: 230px;
+        font-size: 14px;
+     }
+ }
+
+ .custom-head {
+    color: #000000 !important;
+    font-family: "VerizonNHGeDS" !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    letter-spacing: 0 !important;
+    line-height: 24px !important;
+    padding-left: 0 !important;
+    width: 50%;
+    .icon {
+        margin-right: 8px !important;
+        font-size: 1.7rem !important;
+        cursor: pointer;
+        font-weight: 400 !important;
+    }
+ }
+
+ 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+    .container{
+        max-width: 95% !important;
+    }
+    #root {
+        .MainContent-root {
+            width: 100% !important;
+            button {
+                width: auto;
+            }
+        }
+    }
+    #root .MainContent-root .top-pad .headerDropdown .MuiFormControl-root {
+        width: 152px;
+    }
+    .daterange-input-box {
+        width: 152px !important;
+    }
+    .location-input-box{
+        width: 140px !important;
+    }
+
+    #root .MainContent-root .MuiTabs-root button.MuiButtonBase-root {
+        width: auto;
+    }
+    #root .MainContent-root .section2 {
+        height: 280px !important;
+        margin-top: 35px;
+    }
+    #root .MainContent-root .top-pad .section1 {
+        height: auto;
+    }
+    #root .MainContent-root .section2 canvas {
+        height: 95% !important;
+        width: 93% !important;
+        margin-top: 0;
+        float: right !important;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+    .expandcollapse-container {
+        position: initial;
+    }
+}
